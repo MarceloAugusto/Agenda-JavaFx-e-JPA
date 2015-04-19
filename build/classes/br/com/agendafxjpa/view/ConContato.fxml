@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" 
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.agendafxjpa.controller.ConContatoController">
+   <top>
+      <FlowPane fx:id="fpCabecalho" alignment="CENTER" minHeight="60.0" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: lightblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="55.0" prefWidth="422.0" text="Consulta de Contatos">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font></Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </FlowPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="tfPesquisar" promptText="Pesquisar..." AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+            <TableView fx:id="tvConsulta" layoutX="14.0" layoutY="44.0" prefHeight="200.0" prefWidth="572.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="45.0">
+              <columns>
+                <TableColumn fx:id="tcCodigo" prefWidth="49.0" text="Cod." />
+                <TableColumn fx:id="tcNome" prefWidth="213.0" text="Nome" />
+                  <TableColumn fx:id="tcEmpresa" prefWidth="73.0" text="Empresa" />
+                  <TableColumn fx:id="tcMunicipio" prefWidth="100.0" text="Município" />
+                  <TableColumn fx:id="tcEstado" prefWidth="127.0" text="Estado" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+       <AnchorPane>
+          <children>
+           <fx:include fx:id="consulta" source="design/consulta.fxml" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" />
+          </children>
+       </AnchorPane>
+   </bottom>
+</BorderPane>

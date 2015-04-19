@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<FlowPane alignment="CENTER_RIGHT" maxHeight="30.0" minHeight="30.0" minWidth="-Infinity" prefHeight="30.0" 
+          style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8" 
+          xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="br.com.agendafxjpa.controller.design.ConsultaController">
+   <children>
+      <Button fx:id="bNovo" prefWidth="120.0" text="_Novo">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/novo.gif" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bAlterar" prefWidth="120.0" text="_Editar">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/alterar.gif" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bRemover" prefWidth="120.0" text="_Remover">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/remover.gif" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <padding>
+      <Insets right="5.0" />
+   </padding>
+</FlowPane>

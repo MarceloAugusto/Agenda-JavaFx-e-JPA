@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<FlowPane fx:id="fpRodape" alignment="CENTER_RIGHT" maxHeight="30.0" maxWidth="-Infinity" minHeight="30.0" 
+          minWidth="-Infinity" prefHeight="30.0" style="-fx-background-color: lightgrey;" 
+          xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="br.com.agendafxjpa.controller.design.CadastroController">
+   <children>
+      <Button fx:id="bSalvar" mnemonicParsing="false" prefWidth="120.0" text="Salvar">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/salvar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets right="5.0" />
+   </padding>
+</FlowPane>
